@@ -1,0 +1,81 @@
+
+
+/* ----------- Variables ---------------- */
+:root {
+  --bg-clr:hsl(120, 66%, 6%);
+  --content-clr: #f4f4f4;
+}
+
+
+/* ---------- General CSS Reset ---------------*/
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+
+
+
+/* -------------- Tic-Tac-Toe Table Layout ---------------  */
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  display: grid;
+  place-items: center;
+  background: var(--bg-clr);
+  color: var(--content-clr);
+  font-size: 4rem;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  min-height: 50%;
+
+}
+
+.square {
+  padding: 4rem;
+  width: 200px;
+  min-height: 100px;
+  margin: 0 auto;
+
+}
+
+.sq4, .sq6 {
+  border-top: 2px solid var(--content-clr);
+  border-bottom: 2px solid var(--content-clr);
+}
+
+.sq5 {
+  border: 2px solid var(--content-clr);
+}
+
+.sq2, .sq8 {
+  border-left: 2px solid var(--content-clr);
+  border-right: 2px solid var(--content-clr);
+}
+
+.square:focus {
+  outline: none;
+}
