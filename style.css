@@ -4,6 +4,7 @@
 :root {
   --bg-clr:hsl(120, 66%, 6%);
   --content-clr: #f4f4f4;
+  --fnt-size: 4rem;
 }
 
 
@@ -30,20 +31,27 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
+html {
+  font-size: 62.5%;
+}
 
 
 
-/* -------------- Tic-Tac-Toe Table Layout ---------------  */
+/* -------------- Tic-Tac-Toe Layout ---------------  */
 
 body {
-  min-height: 100vh;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
-  display: grid;
-  place-items: center;
   background: var(--bg-clr);
   color: var(--content-clr);
-  font-size: 4rem;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: var(--fnt-size);
+
+  min-height: 100vh;
+  
+  display: grid;
+  place-items: center;
+  
 }
 
 .main {
@@ -59,6 +67,7 @@ body {
   width: 200px;
   min-height: 100px;
   margin: 0 auto;
+  text-align: center;
 
 }
 
